@@ -1,6 +1,6 @@
 {
   "name": "@techymt/create-module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A package that helps in creating modules for a clean TypeScript template",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

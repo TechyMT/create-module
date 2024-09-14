@@ -11,7 +11,6 @@
 
 - Automatically generates module directories and files based on a predefined structure.
 - Ensures consistent module setup with TypeScript.
-- Dynamically resizes terminal text using `figlet` for better readability.
 - Easily integrate with the [typescript-clean-boilerplate](https://github.com/TechyMT/typescript_clean_template) template.
 
 ## Installation
