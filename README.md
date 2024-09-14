@@ -7,6 +7,30 @@
 
 `@techymt/create-module` is a TypeScript package designed to streamline the creation of new modules in a clean TypeScript project structure. This tool is tailored for use with the [typescript-clean-boilerplate](https://github.com/TechyMT/typescript_clean_template) repository, ensuring that your project maintains a consistent and maintainable architecture.
 
+## Prerequisites
+
+Before using `@techymt/create-module`, ensure that your project meets the following prerequisites:
+
+1. **TypeScript**: You need TypeScript installed in your project. If it's not installed, add it using:
+   ```bash
+   npm install --save-dev typescript
+   ```
+
+2. **`ts-node`**: This is required to run TypeScript files directly. Install it with:
+   ```bash
+   npm install --save-dev ts-node
+   ```
+
+3. **Type Definitions for Node.js**: Install `@types/node` for TypeScript support:
+   ```bash
+   npm install --save-dev @types/node
+   ```
+
+4. **`tsconfig.json`**: Ensure that a `tsconfig.json` file is present in the root of your project. If not, create one by running:
+   ```bash
+   npx tsc --init
+   ```
+
 ## Features
 
 - Automatically generates module directories and files based on a predefined structure.
@@ -30,6 +54,7 @@ npm install --save-dev @techymt/create-module
 ## Usage
 
 Navigate to the root of your Node.js project directory:
+
 ```bash
 cd /path/to/your/project
 ```
@@ -39,6 +64,7 @@ Then you can create a new module using the following command:
 ```bash
 npx @techymt/create-module
 ```
+
 You will be prompted to enter the module name. For example:
 
 ```bash
@@ -81,7 +107,6 @@ app.use(ModuleNameModule);
 ```
 
 For more details on setting up the clean TypeScript architecture, visit the [typescript-clean-boilerplate](https://github.com/TechyMT/typescript_clean_template) repository.
-
 
 ## License
 
