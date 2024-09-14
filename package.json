@@ -1,0 +1,37 @@
+{
+  "name": "@techymt/create-module",
+  "version": "1.0.3",
+  "description": "A package that helps in creating modules for a clean TypeScript template",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "create-module": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "ts-node src/index.ts"
+  },
+  "author": "TechyMT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.5.0",
+    "figlet": "^1.7.0",
+    "node-fetch": "^2.6.1",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^18.11.0",
+    "@types/node-fetch": "^2.6.2",
+    "ts-node": "^10.9.2"
+  }
+}
