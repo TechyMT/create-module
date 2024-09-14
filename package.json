@@ -16,7 +16,7 @@
   "author": "TechyMT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/TechyMT/create-module"
   },
   "license": "ISC",
   "dependencies": {
