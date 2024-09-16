@@ -1,11 +1,11 @@
 {
   "name": "@techymt/create-module",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A package that helps in creating modules for a clean TypeScript template",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "create-module": "npm i --save-dev ts-node && dist/index.js"
+    "create-module": "dist/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
