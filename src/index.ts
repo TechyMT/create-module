@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { input } from '@inquirer/prompts'
 import figlet from "figlet"
+import gradient from 'gradient-string';
 
 const terminalWidth = process.stdout.columns || 80;
 
@@ -149,7 +150,7 @@ export { ${toPascalCase(moduleName)}Module };
         fs.writeFileSync(mainIndexPath, mainExports, 'utf8');
 
 
-        figlet.text('Module Created', {
+        figlet.text("Module Created", {
             font: 'Small',
             horizontalLayout: "controlled smushing",
             verticalLayout: "universal smushing",
@@ -162,7 +163,7 @@ export { ${toPascalCase(moduleName)}Module };
                     console.dir(err);
                     return;
                 }
-                console.log(data)
+                console.log(gradient.pastel.multiline(data))
                 console.info(`You can add this module to your main index.ts file as follows:\n//index.ts\nimport { ${toPascalCase(moduleName)}Module } from './Modules/${toPascalCase(moduleName)}';\n// Add the module to the Express app\napp.use(${toPascalCase(moduleName)}Module);`)
             }
         )
